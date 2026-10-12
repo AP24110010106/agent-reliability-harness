@@ -1,0 +1,15 @@
+{
+  "generated_at_utc": "2026-10-12T17:46:53.709975+00:00",
+  "recorded_live_attempts": 24,
+  "successful_attempts": 6,
+  "observed_success_rate": 0.25,
+  "total_input_tokens": 342536,
+  "total_output_tokens": 29530,
+  "total_tokens": 372066,
+  "average_tokens_per_attempt": 15502.75,
+  "input_usd_per_million_tokens": null,
+  "output_usd_per_million_tokens": null,
+  "estimated_total_cost_usd": null,
+  "estimated_cost_per_success_usd": null,
+  "cost_method": "Pricing not supplied; USD costs cannot be calculated."
+}

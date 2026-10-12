@@ -1,0 +1,48 @@
+{
+  "total_recorded_runs": 13,
+  "unique_live_cases": 9,
+  "live_runs": 13,
+  "live_successes": 3,
+  "overall_success_rate": 0.23076923076923078,
+  "rate_limited_runs": 5,
+  "quota_excluded_runs": 8,
+  "quota_excluded_successes": 3,
+  "quota_excluded_success_rate": 0.375,
+  "average_steps": 4.6923076923076925,
+  "average_tool_calls": 3,
+  "average_tokens": 12861.23076923077,
+  "total_tokens": 167196,
+  "total_estimated_cost_usd": null,
+  "cost_per_success_usd": null,
+  "failure_categories": {
+    "missing_expected_content": 1,
+    "token_limit": 4,
+    "rate_limit": 5
+  },
+  "top_three_failures": [
+    [
+      "rate_limit",
+      5
+    ],
+    [
+      "token_limit",
+      4
+    ],
+    [
+      "missing_expected_content",
+      1
+    ]
+  ],
+  "attempts_per_case": {
+    "Q06": 1,
+    "Q07": 1,
+    "Q08": 1,
+    "Q09": 1,
+    "Q10": 1,
+    "Q11": 1,
+    "Q12": 1,
+    "Q13": 1,
+    "Q14": 5
+  },
+  "simulated_checks": 0
+}

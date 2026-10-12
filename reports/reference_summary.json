@@ -1,0 +1,15 @@
+{
+  "generated_at_utc": "2026-10-12T17:46:20.374573+00:00",
+  "defined_reference_cases": 20,
+  "unique_live_cases": 20,
+  "recorded_attempts": 24,
+  "answers_available": 7,
+  "concept_passes": 7,
+  "concept_failures": 0,
+  "citation_statuses": {
+    "not_recheckable": 1,
+    "pass": 6
+  },
+  "cases_without_recorded_runs": [],
+  "methodology": "Concept coverage is a deterministic keyword proxy. Citation checks validate structure and declared source IDs, not the factual support of source content. No automatic semantic equivalence or factual correctness is claimed."
+}

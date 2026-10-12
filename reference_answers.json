@@ -1,0 +1,83 @@
+
+{
+  "Q01": {
+    "reference_answer": "Coral bleaching occurs when environmental stress, particularly elevated ocean temperatures, disrupts the relationship between corals and their symbiotic algae. Corals lose or expel the algae, causing them to appear white.",
+    "required_concepts": ["coral", "temperature", "algae"]
+  },
+  "Q02": {
+    "reference_answer": "Ocean tides are primarily caused by the gravitational attraction of the Moon and, to a lesser extent, the Sun. The rotation of the Earth relative to these tidal bulges contributes to the regular tidal cycle.",
+    "required_concepts": ["moon", "gravity"]
+  },
+  "Q03": {
+    "reference_answer": "The greenhouse effect occurs when gases in Earth's atmosphere absorb and re-emit outgoing infrared radiation, reducing heat loss to space and warming the surface and lower atmosphere.",
+    "required_concepts": ["greenhouse", "heat"]
+  },
+  "Q04": {
+    "reference_answer": "Most earthquakes occur when stress accumulated through tectonic plate movement is suddenly released as rocks slip along faults, generating seismic waves.",
+    "required_concepts": ["tectonic", "fault"]
+  },
+  "Q05": {
+    "reference_answer": "Antibiotic resistance occurs when bacteria evolve or acquire mechanisms that allow them to survive antibiotics that would otherwise inhibit or kill them.",
+    "required_concepts": ["bacteria", "antibiotic"]
+  },
+  "Q06": {
+    "reference_answer": "Vaccines expose the immune system to an antigen or instructions for producing one, stimulating an immune response and immune memory that helps protect against future infection or severe disease.",
+    "required_concepts": ["immune", "response"]
+  },
+  "Q07": {
+    "reference_answer": "Photovoltaic cells convert sunlight directly into electrical energy using semiconductor materials. Absorbed photons create mobile charge carriers that are separated and collected as electric current.",
+    "required_concepts": ["sunlight", "electricity"]
+  },
+  "Q08": {
+    "reference_answer": "Multifactor authentication verifies identity using two or more distinct authentication factors, such as something a person knows, possesses, or is.",
+    "required_concepts": ["authentication", "factor"]
+  },
+  "Q09": {
+    "reference_answer": "The Domain Name System translates domain names into IP addresses through a distributed naming system, allowing applications to locate internet services.",
+    "required_concepts": ["domain", "address"]
+  },
+  "Q10": {
+    "reference_answer": "Weather describes short-term atmospheric conditions, while climate describes statistical patterns and variability in weather over long periods, commonly decades.",
+    "required_concepts": ["weather", "climate"]
+  },
+  "Q11": {
+    "reference_answer": "Solar photovoltaic systems generate electricity from sunlight, while wind turbines convert the kinetic energy of moving air into electricity. Their output depends on different environmental conditions.",
+    "required_concepts": ["solar", "wind"]
+  },
+  "Q12": {
+    "reference_answer": "HTTP is an application-layer protocol for transferring web resources. HTTPS uses HTTP over a secure transport, typically TLS, providing encryption, integrity protection, and server authentication.",
+    "required_concepts": ["http", "https"]
+  },
+  "Q13": {
+    "reference_answer": "Supervised learning trains models using labeled examples to predict outputs, whereas unsupervised learning finds patterns or structures in data without predefined target labels.",
+    "required_concepts": ["supervised", "unsupervised"]
+  },
+  "Q14": {
+    "reference_answer": "RAM is fast, volatile working memory used for actively running programs. An SSD is nonvolatile storage that retains files and programs when power is removed, generally with higher capacity but slower access than RAM.",
+    "required_concepts": ["ram", "ssd"]
+  },
+  "Q15": {
+    "reference_answer": "IPv4 uses 32-bit addresses, while IPv6 uses 128-bit addresses. IPv6 provides a much larger address space and introduces differences in address configuration and protocol behavior.",
+    "required_concepts": ["ipv4", "ipv6"]
+  },
+  "Q16": {
+    "reference_answer": "There is no universally best programming language. The appropriate choice depends on the application, performance needs, ecosystem, team experience, and maintenance requirements.",
+    "required_concepts": ["depends"]
+  },
+  "Q17": {
+    "reference_answer": "No. AI systems are not always accurate. They can make mistakes due to imperfect data, limitations in training, distribution shifts, and incorrect reasoning or generated content.",
+    "required_concepts": ["no"]
+  },
+  "Q18": {
+    "reference_answer": "There is no universally fastest database. Performance depends on workload, data model, query patterns, indexing, hardware, concurrency, and configuration.",
+    "required_concepts": ["depends"]
+  },
+  "Q19": {
+    "reference_answer": "Renewable energy can supply a very large share of electricity and potentially support deeply decarbonized energy systems, but full coverage depends on storage, grid infrastructure, demand flexibility, regional resources, and the sectors being supplied.",
+    "required_concepts": ["energy"]
+  },
+  "Q20": {
+    "reference_answer": "Cloud computing is not always cheaper than on-premises infrastructure. Cost depends on utilization, workload predictability, data transfer, operations, scale, and the period over which costs are compared.",
+    "required_concepts": ["depends"]
+  }
+}

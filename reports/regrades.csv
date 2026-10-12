@@ -1,0 +1,3 @@
+regraded_at_utc,original_timestamp_utc,case_id,repetition,original_passed,original_failure,original_grading_version,new_grading_version,concept_passed,missing_concepts,citation_status,revised_status
+2026-10-10T06:49:49.446550+00:00,2026-10-10T05:59:20.665929+00:00,Q06,1,False,missing_expected_content,v1,v2,True,[],not_recheckable,needs_source_review
+2026-10-10T10:57:35.003756+00:00,2026-10-10T05:59:20.665929+00:00,Q06,1,False,missing_expected_content,v1,v4,True,[],not_recheckable,needs_source_review

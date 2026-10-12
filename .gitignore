@@ -1,0 +1,15 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+*.zip
+submission/
+.pytest_cache/
+.vscode/
+
+runs/
+reliability_harness_backup.py
+reliability_harness_before_concept_fix.py
