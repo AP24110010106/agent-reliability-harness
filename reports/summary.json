@@ -12,8 +12,8 @@
   "average_tool_calls": 3.8333333333333335,
   "average_tokens": 15502.75,
   "total_tokens": 372066,
-  "total_estimated_cost_usd": null,
-  "cost_per_success_usd": null,
+  "total_estimated_cost_usd": 0.06909840000000002,
+  "cost_per_success_usd": 0.011516400000000003,
   "failure_categories": {
     "missing_expected_content": 1,
     "token_limit": 11,
@@ -30,7 +30,7 @@
       5
     ],
     [
-      "missing_expected_content",
+      "iteration_limit",
       1
     ]
   ],
