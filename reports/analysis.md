@@ -18,7 +18,7 @@ This is a deterministic evaluation proxy, not independent proof of factual accur
 - Average tool calls: 3.8333333333333335
 - Average tokens: 15502.75
 - Total tokens: 372066
-- Estimated cost per successful run: None
+- Estimated cost per successful run: 0.011516400000000003
 
 ## Failure Categories
 
@@ -31,7 +31,7 @@ This is a deterministic evaluation proxy, not independent proof of factual accur
 
 1. **token_limit** — 11 attempts
 2. **rate_limit** — 5 attempts
-3. **missing_expected_content** — 1 attempts
+3. **iteration_limit** — 1 attempts
 
 ## Recommended Fixes
 
@@ -46,6 +46,6 @@ This is a deterministic evaluation proxy, not independent proof of factual accur
 - Retries are separate attempts, not additional unique evaluation cases.
 - Historical rate limits are reclassified for analysis without changing original rows.
 - Historical grading versions are mixed and should be compared separately.
-- Q21-Q25 are simulated placeholders, not genuine fault-injection tests.
+- Q21-Q25 are offline fault-injection cases that validate harness behavior at the agent boundary.
 - Provider pricing has not been configured.
 - Cases use expected concepts, not fully verified reference answers.

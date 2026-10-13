@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-12T17:46:53.709975+00:00",
+  "generated_at_utc": "2026-10-13T06:26:33.670801+00:00",
   "recorded_live_attempts": 24,
   "successful_attempts": 6,
   "observed_success_rate": 0.25,
@@ -7,9 +7,12 @@
   "total_output_tokens": 29530,
   "total_tokens": 372066,
   "average_tokens_per_attempt": 15502.75,
-  "input_usd_per_million_tokens": null,
-  "output_usd_per_million_tokens": null,
-  "estimated_total_cost_usd": null,
-  "estimated_cost_per_success_usd": null,
-  "cost_method": "Pricing not supplied; USD costs cannot be calculated."
+  "input_usd_per_million_tokens": 0.15,
+  "output_usd_per_million_tokens": 0.6,
+  "pricing_provider": "Groq",
+  "pricing_model": "openai/gpt-oss-120b",
+  "pricing_source_url": "https://console.groq.com/docs/models",
+  "estimated_total_cost_usd": 0.06909840000000002,
+  "estimated_cost_per_success_usd": 0.011516400000000003,
+  "cost_method": "Default verified Groq pricing for openai/gpt-oss-120b: $0.15/1M input tokens and $0.60/1M output tokens. Estimates use saved input/output token counts only and do not include free-tier credits, taxes, retries outside the harness, or non-token platform charges."
 }

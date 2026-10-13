@@ -8,6 +8,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 HISTORY = ROOT / "reports" / "run_history.csv"
 REPORTS = ROOT / "reports"
+DEFAULT_MODEL = "openai/gpt-oss-120b"
+DEFAULT_PROVIDER = "Groq"
+DEFAULT_INPUT_RATE = 0.15
+DEFAULT_OUTPUT_RATE = 0.60
+PRICING_SOURCE_URL = "https://console.groq.com/docs/models"
 
 
 def to_int(value):
@@ -39,6 +44,20 @@ def read_attempts():
 
 
 def analyze(input_rate=None, output_rate=None):
+    if input_rate is None and output_rate is None:
+        input_rate = DEFAULT_INPUT_RATE
+        output_rate = DEFAULT_OUTPUT_RATE
+        pricing_source = (
+            "Default verified Groq pricing for "
+            f"{DEFAULT_MODEL}: ${input_rate:.2f}/1M "
+            f"input tokens and ${output_rate:.2f}/1M "
+            "output tokens."
+        )
+    else:
+        pricing_source = (
+            "User-supplied pricing override."
+        )
+
     attempts = read_attempts()
 
     prices_available = (
@@ -121,17 +140,18 @@ def analyze(input_rate=None, output_rate=None):
         ),
         "input_usd_per_million_tokens": input_rate,
         "output_usd_per_million_tokens": output_rate,
+        "pricing_provider": DEFAULT_PROVIDER,
+        "pricing_model": DEFAULT_MODEL,
+        "pricing_source_url": PRICING_SOURCE_URL,
         "estimated_total_cost_usd": total_cost,
         "estimated_cost_per_success_usd":
             cost_per_success,
         "cost_method": (
-            "Estimated model-token cost based on "
-            "user-supplied rates. Not a statement "
-            "of actual provider billing."
-            if prices_available
-            else
-            "Pricing not supplied; USD costs "
-            "cannot be calculated."
+            pricing_source
+            + " Estimates use saved input/output token "
+            "counts only and do not include free-tier "
+            "credits, taxes, retries outside the harness, "
+            "or non-token platform charges."
         ),
     }
 

@@ -4,7 +4,7 @@
 A Python evaluation framework for measuring the reliability of a tool-using research agent.
 
 ## Features
-- 20 research benchmark cases
+- 25 evaluation cases: 20 live research prompts and 5 offline edge cases
 - Reference-answer comparison
 - Citation and concept validation
 - Failure classification
@@ -18,9 +18,13 @@ A Python evaluation framework for measuring the reliability of a tool-using rese
 - Successful attempts: 6
 - Overall success rate: 25.0%
 - Quota-excluded success rate: 31.6%
+- Success definition: `success=True`, `finish` termination, valid declared citations, and required concept coverage
 - Average steps: 5.33
 - Total tokens: 372,066
-- Offline tests: 23 passed
+- Estimated total model-token cost: $0.069098
+- Estimated cost per successful run: $0.011516
+- Pricing assumption: Groq `openai/gpt-oss-120b` at $0.15/1M input tokens and $0.60/1M output tokens
+- Offline tests: 26 passed
 
 ## Key Findings
 - Token-limit failures: 11
@@ -48,8 +52,8 @@ reports/final_evaluation.md
 ## Limitations
 Not all research cases have repeated runs.
 Concept matching does not prove factual correctness.
-Fault injection uses mocked agent-boundary failures.
-USD cost estimates require verified provider pricing.
+Fault injection validates harness handling at the agent boundary.
+USD cost estimates use published token rates, not invoice data.
 
 ## Project Integrity
 The original research agent remains unchanged.

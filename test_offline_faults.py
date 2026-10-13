@@ -3,9 +3,11 @@ import unittest
 
 from reliability_harness import (
     CASE_LOOKUP,
+    CASES,
     check_citations,
     check_concepts,
     classify_failure,
+    execute,
     grade,
     is_rate_limit_error,
 )
@@ -182,6 +184,28 @@ class TestOfflineFaults(unittest.TestCase):
 
         self.assertTrue(passed)
         self.assertEqual(failure, "none")
+
+    def test_harness_has_20_plus_cases(self):
+        self.assertGreaterEqual(len(CASES), 20)
+        self.assertEqual(len(CASES), 25)
+
+    def test_edge_cases_are_real_fault_checks(self):
+        edge_cases = [
+            case for case in CASES
+            if case.mode == "simulated_failure"
+        ]
+
+        self.assertEqual(len(edge_cases), 5)
+
+        for case in edge_cases:
+            with self.subTest(case=case.id):
+                result = execute(case, 1)
+
+                self.assertTrue(result.passed)
+                self.assertEqual(
+                    result.failure,
+                    case.expected_failure
+                )
 
 
 if __name__ == "__main__":
